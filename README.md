@@ -35,7 +35,7 @@ A IA foi usada como apoio no aprendizado e na revisão do projeto. Ela ajudou a 
 
 ## Deploy na Vercel
 
-Link a ser preenchido após o deploy: `COLE_AQUI_O_LINK_DA_VERCEL`
+[Acesse o VisuAll na Vercel](https://sprint3-web-dev-jjjrv-9phg.vercel.app/)
 
 ## Integrantes
 

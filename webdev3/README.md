@@ -33,7 +33,7 @@ A IA (Claude) foi usada como apoio no aprendizado de React: explicação de useS
 
 ## Deploy na Vercel
 
-[PREENCHER — link após o deploy]
+[Acesse o VisuAll na Vercel](https://sprint3-web-dev-jjjrv-9phg.vercel.app/)
 
 ## Integrantes
 
