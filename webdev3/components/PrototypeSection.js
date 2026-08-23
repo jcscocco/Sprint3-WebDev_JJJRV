@@ -21,7 +21,17 @@ export default function PrototypeSection() {
   "/images/.presentation/p1/1-9.png",
 ];
 
-const present2 = ["/images/.presentation/p2/p2.svg"];
+const present2 = [
+  "/images/.presentation/p2/2-1.png",
+  "/images/.presentation/p2/2-2.png",
+  "/images/.presentation/p2/2-3.png",
+  "/images/.presentation/p2/2-4.png",
+  "/images/.presentation/p2/2-5.png",
+  "/images/.presentation/p2/2-6.png",
+  "/images/.presentation/p2/2-7.png",
+  "/images/.presentation/p2/2-8.png",
+  "/images/.presentation/p2/2-9.png",
+];
 
   // escolhe qual array usar, dependendo de qual apresentação está aberta
   const imagensAtuais = presentAberta === 0 ? present1 : present2;
