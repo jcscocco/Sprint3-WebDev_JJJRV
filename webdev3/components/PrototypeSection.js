@@ -25,6 +25,7 @@ const present2 = ["/images/.presentation/p2/p2.svg"];
 
   // escolhe qual array usar, dependendo de qual apresentação está aberta
   const imagensAtuais = presentAberta === 0 ? present1 : present2;
+  const totalDeImagens = Math.max(imagensAtuais.length, 1);
 
   function abrirVersao1() {
     setPresentAberta(0);
@@ -42,12 +43,12 @@ const present2 = ["/images/.presentation/p2/p2.svg"];
 
   function proximaImagem() {
     // resto da divisão: se chegar no fim do array, volta pro índice 0 sozinho
-    setImgIndex((imgIndex + 1) % imagensAtuais.length);
+    setImgIndex((imgIndex + 1) % totalDeImagens);
   }
 
   function imagemAnterior() {
     // soma o tamanho antes do resto pra nunca dar número negativo
-    setImgIndex((imgIndex - 1 + imagensAtuais.length) % imagensAtuais.length);
+    setImgIndex((imgIndex - 1 + totalDeImagens) % totalDeImagens);
   }
 
   return (
@@ -82,8 +83,12 @@ const present2 = ["/images/.presentation/p2/p2.svg"];
       <div className={`carousel ${presentAberta === null ? "hide" : ""}`}>
         <img src={imagensAtuais[imgIndex]} alt="Slide da apresentação" />
         <div className="botoes">
-          <button onClick={imagemAnterior}>Anterior</button>
-          <button onClick={proximaImagem}>Próxima</button>
+          {imagensAtuais.length > 1 && (
+            <>
+              <button onClick={imagemAnterior}>Anterior</button>
+              <button onClick={proximaImagem}>Próxima</button>
+            </>
+          )}
           <button onClick={fecharCarousel}>Fechar</button>
         </div>
       </div>

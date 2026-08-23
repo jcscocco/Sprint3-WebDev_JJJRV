@@ -11,8 +11,7 @@ Projeto desenvolvido para o Challenge FIAP em parceria com a JOVI.
 ## Como instalar as dependências
 
 ```bash
-git clone https://github.com/Boletinirafs/SPRINT3_WebDev_JJJRV.git
-cd SPRINT3_WebDev_JJJRV/webdev3
+cd webdev3
 npm install
 ```
 

@@ -418,7 +418,7 @@ color: #f5c842;
     border-radius: 8px;
     padding: 12px 14px;
     color: #e0e0e0;
-    font-size: 0.;
+    font-size: 16px;
     font-family: 'Segoe UI', Arial, sans-serif;
     transition: border-color 0.3s;
 }
@@ -437,17 +437,17 @@ color: #f5c842;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
-.cont-ms input {
+.cont-ms textarea {
     background-color: #0f0f0f;
     border: 1px solid #1e1a00;
     border-radius: 8px;
     padding: 62px 14px;
     color: #e0e0e0;
-    font-size: 0.;
+    font-size: 16px;
     font-family: 'Segoe UI', Arial, sans-serif;
     transition: border-color 0.3s;
 }
-.cont-ms input:hover {
+.cont-ms textarea:hover {
     outline: none;
     border-color: #c9960c;
 }
@@ -464,7 +464,7 @@ color: #f5c842;
     font-size: 16px;
     transition: opacity 0.3s, transform 0.2s;
 }
-.confirma {
+.confirma:hover {
     opacity: 0.85;
     transform: translateY(-2px);
 }
