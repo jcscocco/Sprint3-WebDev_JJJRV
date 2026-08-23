@@ -305,7 +305,8 @@ color: #f5c842;
     transform: translateY(-5px);
 }
 .visualize1,
-.visualize2 {
+.visualize2,
+.visualize3 {
     color: #f5c842;
     border: 1.5px solid #251e01;
     padding: 14px 36px;
@@ -320,7 +321,8 @@ color: #f5c842;
 }
 
 .visualize1:hover,
-.visualize2:hover {
+.visualize2:hover,
+.visualize3:hover {
     background-color: #251e01;
     border-color: #f5c842;
     opacity: 0.85;

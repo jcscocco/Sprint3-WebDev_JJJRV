@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export default function PrototypeSection() {
-  // qual apresentação está aberta: null (fechado), 0 (versão 1) ou 1 (versão 2)
+  // qual apresentação está aberta: null (fechado), 0 (versão 1), 1 (versão 2) ou 2 (versão 3)
   const [presentAberta, setPresentAberta] = useState(null);
 
   // qual imagem do array atual está sendo mostrada
@@ -33,8 +33,30 @@ const present2 = [
   "/images/.presentation/p2/2-9.png",
 ];
 
+const present3 = [
+  "/images/.presentation/p3/3-1.png",
+  "/images/.presentation/p3/3-2.png",
+  "/images/.presentation/p3/3-3.png",
+  "/images/.presentation/p3/3-4.png",
+  "/images/.presentation/p3/3-5.png",
+  "/images/.presentation/p3/3-6.png",
+  "/images/.presentation/p3/3-7.png",
+  "/images/.presentation/p3/3-8.png",
+  "/images/.presentation/p3/3-9.png",
+  "/images/.presentation/p3/3-10.png",
+];
+
   // escolhe qual array usar, dependendo de qual apresentação está aberta
-  const imagensAtuais = presentAberta === 0 ? present1 : present2;
+  let imagensAtuais = present1;
+
+  if (presentAberta === 1) {
+    imagensAtuais = present2;
+  }
+
+  if (presentAberta === 2) {
+    imagensAtuais = present3;
+  }
+
   const totalDeImagens = Math.max(imagensAtuais.length, 1);
 
   function abrirVersao1() {
@@ -44,6 +66,11 @@ const present2 = [
 
   function abrirVersao2() {
     setPresentAberta(1);
+    setImgIndex(0);
+  }
+
+  function abrirVersao3() {
+    setPresentAberta(2);
     setImgIndex(0);
   }
 
@@ -86,6 +113,17 @@ const present2 = [
           </p>
           <button className="visualize2" onClick={abrirVersao2}>
             Visualizar Slides para Banca 2
+          </button>
+        </div>
+
+        <div className="version">
+          <h3>Versao 3.0</h3>
+          <p>
+            Versao com aplicativo Android funcional, utilizando Kotlin,
+            CameraX e MediaPipe Holistic.
+          </p>
+          <button className="visualize3" onClick={abrirVersao3}>
+            Visualizar Slides para Banca 3
           </button>
         </div>
       </div>
