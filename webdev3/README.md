@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# VisuAll
 
-## Getting Started
+Projeto desenvolvido para o Challenge FIAP em parceria com a JOVI.
 
-First, run the development server:
+## Tecnologias utilizadas
+
+- Next.js 16
+- React
+- CSS puro
+
+## Como instalar as dependências
+
+```bash
+git clone https://github.com/Boletinirafs/SPRINT3_WebDev_JJJRV.git
+cd SPRINT3_WebDev_JJJRV/webdev3
+npm install
+```
+
+## Como executar o projeto
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usuários e senhas necessários para teste
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O login não tem usuário pré-cadastrado (usa localStorage, sem banco de dados). Para testar: clique em Cadastre-se, crie um usuário e senha, depois clique em Login com os mesmos dados.
 
-## Learn More
+## Uso de Inteligência Artificial no projeto
 
-To learn more about Next.js, take a look at the following resources:
+A IA (Claude) foi usada como apoio no aprendizado de React: explicação de useState e inputs controlados, ajuda na lógica de login/cadastro com localStorage, no carrossel com operações matemáticas, e na resolução de erros de configuração (Node.js, Git, PowerShell).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy na Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[PREENCHER — link após o deploy]
 
-## Deploy on Vercel
+## Integrantes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Joao Victor Pereira Gimenes — RM: [571662]
+- Juan Duarte Moura — RM: [570331]
+- Julio Cesar Silva Cocco — RM: [569463]
+- Rafael Boletini de Oliveira — RM: [570219]
+- Victor Rossi Sales Zanandre — RM: [573844]
